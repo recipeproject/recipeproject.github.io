@@ -1,0 +1,68 @@
+/* Custom CSS for Recipe Project */
+
+body {
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background: url("bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header .flex-overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header .flex-overlay h1 {
+    font-weight: normal;
+    text-align: center;
+	font-size: 80px;
+	animation-name: logo;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+.bg-light {
+    background-color: transparent!important;
+}
+
+.navbar-light .navbar-brand {
+    color: white!important;
+}
+
+.fa.fa-user-circle {
+    font-size: 2.25rem;
+    color: white!important;
+}
+
+.fa.fa-user-circle:hover {
+    animation: animacja 1.5s infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@keyframes animacja {
+    0%{transform: scale(1)}
+    25%{transform: scale(1.2)}
+    50%{transform: scale(1)}
+    75%{transform: scale(1.2)}
+    100%{transform: scale(1)}
+}
+
+@keyframes logo {
+    0%{ transform: scale(1.05);}
+    25%{transform: scale(0.99);}
+    50%{transform: scale(1.05);}
+    75%{transform: scale(0.99);}
+    100%{transform: scale(1.05);}
+  }
