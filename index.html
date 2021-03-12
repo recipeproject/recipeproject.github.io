@@ -15,10 +15,52 @@
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery -->
+    <script>
+      $(document).ready(function() { 
+        $('#loginForm').modal('show');
+
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+      });
+    </script>
   </head>
   <body>
 
     <div class="header">
+
+      <div class="modal fade" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-title text-center">
+                <h4>Login</h4>
+              </div>
+              <div class="d-flex flex-column text-center">
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email1"placeholder="E-mail...">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="password1" placeholder="Hasło...">
+                  </div>
+                  <button type="button" class="btn btn-info btn-block btn-round">Zaloguj się</button>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <div class="signup-section">Nie posiadasz jeszcze konta? <a href="#a" class="text-info"> Zarejestruj się</a>.</div>
+            </div>
+          </div> 
+        </div>
+      </div>
 
       <nav class="navbar navbar-expand-sm navbar-dark bg-light">
 
@@ -29,7 +71,7 @@
         
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <form class="form-inline my-2 my-lg-0 ml-auto">
-            <button class="btn btn-dark" type="submit">Zaloguj się</button>
+            <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#loginForm">Zaloguj się</button>
           </form>
         </div>
         
