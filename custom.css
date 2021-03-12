@@ -35,16 +35,35 @@ body {
 }
 
 .bg-light {
-    background-color: transparent!important;
+    background-color: transparent !important;
 }
 
 .navbar-light .navbar-brand {
-    color: white!important;
+    color: white !important;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background: url('https://mdbcdn.b-cdn.net/img/svg/hamburger2.svg?color=fff') !important;
+}
+
+.btn-dark {
+    background: transparent !important;
+    border-color: white;
+}
+
+.btn-dark:hover {
+    border-color: white;
+}
+
+.btn-dark:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: white !important;
 }
 
 .fa.fa-user-circle {
     font-size: 2.25rem;
-    color: white!important;
+    color: white !important;
 	text-shadow: 2px 2px black !important;
 }
 
@@ -52,6 +71,21 @@ body {
     animation: animacja 3s infinite;
     animation-timing-function: ease-in-out;
     -webkit-animation-timing-function: ease-in-out;
+}
+
+.map-responsive{
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe{
+    left: 0;
+    top: 0;
+    height: 40%;
+    width: 100%;
+    position: absolute;
 }
 
 @keyframes animacja {
