@@ -30,10 +30,12 @@ body {
 	animation-duration: 3s;
     text-shadow: 2px 2px black;
 }
-.header .flex-overlay h1 img{
+
+.header .flex-overlay h1 img {
     width: 45%;
     height: 45%;
 }
+
 .bg-light {
     background-color: transparent !important;
 }
@@ -73,19 +75,79 @@ body {
     -webkit-animation-timing-function: ease-in-out;
 }
 
-.map-responsive{
+.map-responsive {
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
 }
 
-.map-responsive iframe{
+.map-responsive iframe {
     left: 0;
     top: 0;
     height: 40%;
     width: 100%;
     position: absolute;
+}
+
+@media screen and (max-width: 411px) {
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 412px) and (max-width: 460px) {
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 90%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 461px) and (max-width: 523px) {
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 80%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 524px) and (max-width: 608px) {
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 70%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 609px) and (max-width: 726px) {
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 60%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 727px) and (max-width: 903px) {
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 50%;
+        width: 100%;
+        position: absolute;
+    }
 }
 
 @keyframes animacja {
