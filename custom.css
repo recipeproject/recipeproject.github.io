@@ -30,7 +30,10 @@ body {
 	animation-duration: 3s;
     text-shadow: 2px 2px black;
 }
-
+.header .flex-overlay h1 img{
+    width: 45%;
+    height: 45%;
+}
 .bg-light {
     background-color: transparent !important;
 }
