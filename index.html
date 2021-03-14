@@ -15,17 +15,6 @@
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- jQuery -->
-    <script>
-      $(document).ready(function() { 
-        $('#loginForm').modal('show');
-
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-        })
-      });
-    </script>
   </head>
   <body>
 
@@ -56,25 +45,59 @@
               </div>
             </div>
             <div class="modal-footer d-flex justify-content-center">
-              <div class="signup-section">Nie posiadasz jeszcze konta? <a href="#a" class="text-info"> Zarejestruj się</a>.</div>
+              <div class="signup-section">Nie posiadasz jeszcze konta? <a id="reg" data-toggle="modal" data-target="#registerForm" class="text-info"> Zarejestruj się</a>.</div>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <div class="modal fade" id="registerForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-title text-center">
+                <h4>Rejestracja</h4>
+              </div>
+              <div class="d-flex flex-column text-center">
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Imię...">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="surname" placeholder="Nazwisko...">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="username" placeholder="Nazwa użytkownika...">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email1" placeholder="E-mail...">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="password1" placeholder="Hasło...">
+                  </div>
+                  <button type="button" class="btn btn-info btn-block btn-round">Zarejestruj się</button>
+                </form>
+              </div>
             </div>
           </div> 
         </div>
       </div>
 
       <nav class="navbar navbar-expand-sm navbar-dark bg-light">
-
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <form class="form-inline my-2 my-lg-0 ml-auto">
             <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#loginForm">Zaloguj się</button>
           </form>
         </div>
-        
       </nav>
 
       <div class="flex-overlay">
@@ -82,6 +105,31 @@
       </div>
 
     </div>
+
+    <div class="mgb-40 padb-30 auto-invert line-b-4 align-center">
+      <h1 class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg" contenteditable="false">Read Customer Reviews</h1>
+    </div>
+
+    <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
+      <li>
+        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+        <p class="fs-110 font-cond-l" contenteditable="false">" Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. "</p>
+        <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Martha Stewart</h5>
+        <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Business Woman - New York</small>
+      </li>
+      <li>
+        <img src="https://bootdey.com/img/Content/avatar/avatar4.png" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+        <p class="fs-110 font-cond-l" contenteditable="false">" Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. "</p>
+        <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Ariana Menage</h5>
+        <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Recording Artist - Los Angeles</small>
+      </li>
+      <li>
+        <img src="https://bootdey.com/img/Content/avatar/avatar5.png" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+        <p class="fs-110 font-cond-l" contenteditable="false">" Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. "</p>
+        <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Sean Carter</h5>
+        <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Fund Manager - Chicago</small>
+      </li>
+    </ul>
 
     <div class="map-responsive">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.9887098366626!2d22.013391215682347!3d50.030307379419696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfaf83c5a9833%3A0x432f7dd9b86f7a01!2sUniwersytet%20Rzeszowski!5e0!3m2!1spl!2spl!4v1615492814710!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -92,5 +140,8 @@
     <script src="jquery-3.3.1.slim.min.js"></script>
     <script src="popper.min.js"></script>
     <script src="bootstrap.min.js"></script>
+
+    <!-- Custom jQuery -->
+    <script src="customJQuery.js"></script>
   </body>
 </html>

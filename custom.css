@@ -48,6 +48,7 @@ body {
     background: url('https://mdbcdn.b-cdn.net/img/svg/hamburger2.svg?color=fff') !important;
 }
 
+/* Button Stylization */
 .btn-dark {
     background: transparent !important;
     border-color: white;
@@ -75,11 +76,17 @@ body {
     -webkit-animation-timing-function: ease-in-out;
 }
 
+#reg {
+    cursor: pointer;
+}
+
+/* Device Responsive Google Maps */
 .map-responsive {
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
+    clear: both;
 }
 
 .map-responsive iframe {
@@ -150,6 +157,7 @@ body {
     }
 }
 
+/* Animation */
 @keyframes animacja {
     0%{transform: scale(1)}
     25%{transform: scale(1.2)}
@@ -194,4 +202,80 @@ body {
 
 .signup-section {
     padding: 0.3rem 0rem;
+}
+
+/* Customer Reviews */
+.align-center {
+    text-align: center;
+}
+
+.hash-list {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px){
+    .hash-list.cols-3 > li:nth-last-child(-n+3) {
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 768px){
+    .hash-list.cols-3 > li {
+        width: 33.3333%;
+    }
+}
+
+.hash-list > li {
+    display: block;
+    float: left;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.pad-30, .pad-30-all > * {
+    padding: 30px;
+}
+
+img {
+    border: 0;
+}
+
+.mgb-20, .mgb-20-all > * {
+    margin-bottom: 20px;
+}
+
+.wpx-100, .wpx-100-after:after {
+    width: 100px;
+}
+
+.img-round, .img-rel-round {
+    border-radius: 50%;
+}
+
+.padb-30, .padb-30-all > * {
+    padding-bottom: 30px;
+}
+
+.mgb-40, .mgb-40-all > * {
+    margin-bottom: 40px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+[class*="line-b"] {
+    position: relative;
+    padding-bottom: 20px;
+    border-color: #E6AF2A;
+}
+
+.fg-text-d, .fg-hov-text-d:hover, .fg-active-text-d.active {
+    color: #222;
+}
+
+.font-cond-b {
+    font-weight: 700 !important;
 }
