@@ -266,12 +266,6 @@ img {
     text-align: center;
 }
 
-[class*="line-b"] {
-    position: relative;
-    padding-bottom: 20px;
-    border-color: #E6AF2A;
-}
-
 .fg-text-d, .fg-hov-text-d:hover, .fg-active-text-d.active {
     color: #222;
 }
