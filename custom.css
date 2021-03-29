@@ -262,71 +262,99 @@ body {
 }
 
 /* Customer Reviews */
-.align-center {
-    text-align: center;
+.container-fluid {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background: linear-gradient(#01579B, #03A9F4);
+    background-repeat: no-repeat;
 }
 
-.hash-list {
-    display: block;
-    padding: 0;
-    margin: 0 auto;
+.card-main {
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 4px 8px 0px #283593;
 }
 
-@media (min-width: 768px) {
-    .hash-list.cols-3 > li:nth-last-child(-n+3) {
-        border-bottom: none;
+.card-0 {
+    color: #fff;
+    background-color: #536DFE;
+    position: relative;
+    margin-left: 70px;
+    border-radius: 10px;
+    min-height: 312px;
+}
+
+.carousel-indicators li {
+    cursor: pointer;
+    border-radius: 50% !important;
+    width: 10px;
+    height: 10px;
+}
+
+.profile {
+    color: #000;
+    background-color: #FFD54F;
+    position: absolute;
+    left: -70px;
+    top: 17%;
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.open-quotes {
+    margin-left: 130px;
+    margin-top: 100px;
+}
+
+.content {
+    margin-left: 150px;
+    margin-right: 80px;
+}
+
+.close-quotes {
+    margin-bottom: 100px;
+    margin-right: 60px;
+}
+
+@media screen and (max-width: 600px) {
+    .card-main {
+        padding: 50px 10px;
     }
-}
 
-@media (min-width: 768px) {
-    .hash-list.cols-3 > li {
-        width: 33.3333%;
+    .card-0 {
+        min-height: 432px;
     }
-}
 
-.hash-list > li {
-    display: block;
-    float: left;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
+    .profile {
+        top: 24%;
+    }
 
-.pad-30, .pad-30-all > * {
-    padding: 30px;
-}
+    .profile-pic {
+        width: 90px;
+        height: 90px;
+    }
 
-img {
-    border: 0;
-}
+    .open-quotes {
+        margin-left: 100px;
+    }
 
-.mgb-20, .mgb-20-all > * {
-    margin-bottom: 20px;
-}
+    .content {
+        margin-left: 120px;
+        margin-right: 50px;
+    }
 
-.wpx-100, .wpx-100-after:after {
-    width: 100px;
-}
-
-.img-round, .img-rel-round {
-    border-radius: 50%;
-}
-
-.padb-30, .padb-30-all > * {
-    padding-bottom: 30px;
-}
-
-.mgb-40, .mgb-40-all > * {
-    margin-bottom: 40px;
-}
-
-.align-center {
-    text-align: center;
-}
-
-.fg-text-d, .fg-hov-text-d:hover, .fg-active-text-d.active {
-    color: #222;
-}
-
-.font-cond-b {
-    font-weight: 700 !important;
+    .close-quotes {
+        margin-right: 30px;
+    }
 }
