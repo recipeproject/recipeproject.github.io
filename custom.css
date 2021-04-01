@@ -45,6 +45,7 @@ body {
 .navbar-dark .navbar-toggler-icon {
     background: url('https://mdbcdn.b-cdn.net/img/svg/hamburger2.svg?color=fff') !important;
 }
+
 /* Button Stylization */
 .btn-dark {
     background: transparent !important;
@@ -76,45 +77,48 @@ body {
 #reg {
     cursor: pointer;
 }
+
 /* TEST */
-.produkty{
+.produkty {
     height: auto;
     background-color: white;
     margin: 0 auto;
     /*box-shadow: 1px 5px 10px black;*/
-  }
-  .mgal{
+}
+
+.mgal {
     list-style-type: none;
     margin: 0 auto ;
     text-align: center;
     padding-left: 0px;
     vertical-align: middle;
-  }
+}
   
-  .mgal ul {
-      padding-left: 0px;
-      margin: 0 auto;
-  }
+.mgal ul {
+    padding-left: 0px;
+    margin: 0 auto;
+}
   
-  .mgal li {
+.mgal li {
     width: 400px;
     height: 250px;
     display: inline-block;
     margin: 20px 20px 20px 20px;
-  }
+}
   
-  .produkty img{
-    width: 400px;
+.produkty img {
     height: 250px;
     margin-top: 0px;
     padding: 0px;
     border-radius: 10px;
-  }
-  .container {
+}
+
+.container {
     position: relative;
     width: 100%;
-  }
-  .image {
+}
+
+.image {
   opacity: 1;
   display: block;
   width: 100%;
@@ -122,12 +126,13 @@ body {
   transition: .5s ease;
   backface-visibility: hidden;
 }
+
 .middle {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
-  left: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
@@ -146,10 +151,8 @@ body {
   font-size: 60px;
   padding: 16px 32px;
   filter: drop-shadow(10px 6px 5px black);
-
   font-family: 'impact';
 }
-/* TEST */
 
 /* Contact Form With Google Maps */
 .contact-form {
@@ -182,6 +185,7 @@ body {
     color: #7b7c7c;
     font-size: 1.1rem;
 }
+
 .social a:hover {
     color: #000000;
     transition: all ease 0.3s;
@@ -290,11 +294,13 @@ body {
         height: 90vh;
     }
 }
-@media (max-height: 800px){
+
+@media (max-height: 800px) {
     .contact-form{
         height: 90vh;
     }
 }
+
 @media (max-width: 450px) {
     .social {
         display: none;
@@ -510,4 +516,9 @@ body {
     .close-quotes {
         margin-right: 30px;
     }
+}
+
+/* Swal Button Custom */
+.swal-button {
+    background-color: #434445 !important;
 }
