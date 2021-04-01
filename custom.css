@@ -46,6 +46,52 @@ body {
     background: url('https://mdbcdn.b-cdn.net/img/svg/hamburger2.svg?color=fff') !important;
 }
 
+.dania{
+    margin: 0 auto;
+    padding: 0px;
+    float:left;
+    white-space: nowrap;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+  }
+  
+.breakfast{
+    position: absolute;
+    left:10%;
+    top: 105%;
+    margin: 0 auto;
+    padding: 0px;
+    display: inline-block;
+    text-align:justify;
+    width: 30%;  
+    height:100px;
+  }
+  
+.dinner{
+    position: absolute;
+    left: 40%;
+    top: 105%;
+    position: middle;
+    margin: 0 auto;
+    padding: 0px;
+    display: inline-block;
+    width: 30%;
+    height:100px;
+  }
+ .supper{
+    position: absolute;
+    left: 70%;
+    top: 105%;	
+    margin: 0 auto;
+    padding: 0px;
+    display: inline-block;
+    width: 30%;
+    height:100px;
+ }
+ #img_b{
+     border-radius: 40px;
+ }
 /* Button Stylization */
 .btn-dark {
     background: transparent !important;
@@ -77,10 +123,50 @@ body {
 #reg {
     cursor: pointer;
 }
+/* TEST */
+.produkty{
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    /*box-shadow: 1px 5px 10px black;*/
+  }
+  .mgal{
+    list-style-type: none;
+    margin: 0 auto ;
+    text-align: center;
+    padding-left: 0px;
+    vertical-align: middle;
+  }
+  
+  .mgal ul {
+      padding-left: 0px;
+      margin: 0 auto;
+  }
+  
+  .mgal li {
+    width: 375px;
+    height: 250px;
+    display: inline-block;
+    margin: 20px 20px 20px 20px;
+  }
+  
+  .produkty img{
+    width: 375px;
+    height: 250px;
+    margin-top: 0px;
+    padding: 0px;
+    border-radius: 30px;
+  }
+  .container2 {
+    position: relative;
+    width: 100%;
+    padding-left: 10px;
+  }
+/* TEST */
 
 /* Contact Form With Google Maps */
 .contact-form {
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     position: relative;
 }
@@ -109,7 +195,6 @@ body {
     color: #7b7c7c;
     font-size: 1.1rem;
 }
-
 .social a:hover {
     color: #000000;
     transition: all ease 0.3s;
@@ -214,8 +299,18 @@ body {
     .map {
         display: none;
     }
+    .contact-form{
+        height: 90vh;
+    }
+    .mgal li{
+        margin: 20px 0px 20px -20px;
+    }
 }
-
+@media (max-height: 800px){
+    .contact-form{
+        height: 90vh;
+    }
+}
 @media (max-width: 450px) {
     .social {
         display: none;
@@ -347,50 +442,43 @@ body {
     color: #000;
     overflow-x: hidden;
     height: 100%;
-    background: linear-gradient(#01579B, #03A9F4);
+    background: url("bg3.jpg") center fixed;;
     background-repeat: no-repeat;
 }
 
 .card-main {
     padding: 50px;
-    border-radius: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
-    box-shadow: 0px 4px 8px 0px #283593;
 }
-
+.card{
+    background-color: transparent;
+}
 .card-0 {
     color: #fff;
-    background-color: #536DFE;
+    background-color: #434445;
     position: relative;
     margin-left: 70px;
-    border-radius: 10px;
     min-height: 312px;
 }
 
 .carousel-indicators li {
     cursor: pointer;
-    border-radius: 50% !important;
     width: 10px;
     height: 10px;
 }
 
 .profile {
     color: #000;
-    background-color: #FFD54F;
+    background-color: white;
     position: absolute;
     left: -70px;
     top: 17%;
-    border-radius: 8px;
-    border-top-left-radius: 0px;
-    border-bottom-right-radius: 0px;
 }
 
 .profile-pic {
     width: 120px;
     height: 120px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 .open-quotes {
