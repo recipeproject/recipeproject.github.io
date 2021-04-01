@@ -45,53 +45,6 @@ body {
 .navbar-dark .navbar-toggler-icon {
     background: url('https://mdbcdn.b-cdn.net/img/svg/hamburger2.svg?color=fff') !important;
 }
-
-.dania{
-    margin: 0 auto;
-    padding: 0px;
-    float:left;
-    white-space: nowrap;
-    width: 100%;
-    height: 300px;
-    align-items: center;
-  }
-  
-.breakfast{
-    position: absolute;
-    left:10%;
-    top: 105%;
-    margin: 0 auto;
-    padding: 0px;
-    display: inline-block;
-    text-align:justify;
-    width: 30%;  
-    height:100px;
-  }
-  
-.dinner{
-    position: absolute;
-    left: 40%;
-    top: 105%;
-    position: middle;
-    margin: 0 auto;
-    padding: 0px;
-    display: inline-block;
-    width: 30%;
-    height:100px;
-  }
- .supper{
-    position: absolute;
-    left: 70%;
-    top: 105%;	
-    margin: 0 auto;
-    padding: 0px;
-    display: inline-block;
-    width: 30%;
-    height:100px;
- }
- #img_b{
-     border-radius: 40px;
- }
 /* Button Stylization */
 .btn-dark {
     background: transparent !important;
@@ -144,24 +97,58 @@ body {
   }
   
   .mgal li {
-    width: 375px;
+    width: 400px;
     height: 250px;
     display: inline-block;
     margin: 20px 20px 20px 20px;
   }
   
   .produkty img{
-    width: 375px;
+    width: 400px;
     height: 250px;
     margin-top: 0px;
     padding: 0px;
-    border-radius: 30px;
+    border-radius: 10px;
   }
-  .container2 {
+  .container {
     position: relative;
     width: 100%;
-    padding-left: 10px;
   }
+  .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  filter: blur(2px);
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 60px;
+  padding: 16px 32px;
+  filter: drop-shadow(10px 6px 5px black);
+
+  font-family: 'impact';
+}
 /* TEST */
 
 /* Contact Form With Google Maps */
