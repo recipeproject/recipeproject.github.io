@@ -289,9 +289,6 @@ body {
     .contact-form{
         height: 90vh;
     }
-    .mgal li{
-        margin: 20px 0px 20px -20px;
-    }
 }
 @media (max-height: 800px){
     .contact-form{
