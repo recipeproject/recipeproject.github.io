@@ -79,6 +79,13 @@ body {
 }
 
 /* TEST */
+.container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 .produkty {
     height: auto;
     background-color: white;
@@ -162,10 +169,60 @@ body {
 }
 
 /* Contact Form With Google Maps */
-.contact-form {
-    height: 70vh;
-    width: 100%;
-    position: relative;
+@media (min-width: 451px) {
+    .contact-form {
+        height: 60vh;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (min-height: 800px) and (max-height: 900px) {
+    .contact-form {
+        height: 70vh;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (min-height: 700px) and (max-height: 799px) {
+    .contact-form {
+        height: 80vh;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (min-height: 600px) and (max-height: 699px) {
+    .contact-form {
+        height: 90vh;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (min-height: 500px) and (max-height: 599px) {
+    .contact-form {
+        height: 110vh;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (min-height: 400px) and (max-height: 499px) {
+    .contact-form {
+        height: 140vh;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (min-height: 300px) and (max-height: 399px) {
+    .contact-form {
+        height: 190vh;
+        width: 100%;
+        position: relative;
+    }
 }
 
 #contact {
@@ -297,15 +354,6 @@ body {
     .map {
         display: none;
     }
-    .contact-form{
-        height: 90vh;
-    }
-}
-
-@media (max-height: 800px) {
-    .contact-form{
-        height: 90vh;
-    }
 }
 
 @media (max-width: 450px) {
@@ -327,6 +375,10 @@ body {
     .c-heading h1 {
         font-size: 2.2rem;
         text-align: center;
+    }
+    .contact-form {
+        width: 100%;
+        position: relative;
     }
 }
 
