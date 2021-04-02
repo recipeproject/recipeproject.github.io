@@ -169,6 +169,12 @@ body {
 }
 
 /* Contact Form With Google Maps */
+@media (max-width: 1100px) {
+    .map {
+        display: none;
+    }
+}
+
 @media (min-width: 451px) {
     .contact-form {
         height: 60vh;
@@ -177,49 +183,26 @@ body {
     }
 }
 
-@media (min-height: 800px) and (max-height: 900px) {
-    .contact-form {
-        height: 70vh;
-        width: 100%;
-        position: relative;
+@media (max-width: 450px) {
+    .social {
+        display: none;
     }
-}
-
-@media (min-height: 700px) and (max-height: 799px) {
-    .contact-form {
-        height: 80vh;
+    .contact-box {
         width: 100%;
-        position: relative;
+        height: 100vh;
+        box-sizing: border-box;
     }
-}
-
-@media (min-height: 600px) and (max-height: 699px) {
-    .contact-form {
-        height: 90vh;
+    #contact {
+        position: static;
+        transform: translate(0, 0);
         width: 100%;
-        position: relative;
+        box-sizing: border-box;
     }
-}
-
-@media (min-height: 500px) and (max-height: 599px) {
-    .contact-form {
-        height: 110vh;
-        width: 100%;
-        position: relative;
+    .c-heading h1 {
+        font-size: 2.2rem;
+        text-align: center;
     }
-}
-
-@media (min-height: 400px) and (max-height: 499px) {
     .contact-form {
-        height: 140vh;
-        width: 100%;
-        position: relative;
-    }
-}
-
-@media (min-height: 300px) and (max-height: 399px) {
-    .contact-form {
-        height: 190vh;
         width: 100%;
         position: relative;
     }
@@ -348,37 +331,6 @@ body {
 .map {
     filter: grayscale(0.2);
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 1100px) {
-    .map {
-        display: none;
-    }
-}
-
-@media (max-width: 450px) {
-    .social {
-        display: none;
-    }
-    .contact-box {
-        width: 100%;
-        height: 100vh;
-        box-sizing: border-box;
-    }
-    #contact {
-        position: static;
-        transform: translate(0, 0);
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .c-heading h1 {
-        font-size: 2.2rem;
-        text-align: center;
-    }
-    .contact-form {
-        width: 100%;
-        position: relative;
-    }
 }
 
 /* Animation */
