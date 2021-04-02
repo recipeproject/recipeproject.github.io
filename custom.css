@@ -109,7 +109,6 @@ body {
 @media (min-width: 451px) {
     .mgal li {
         width: 400px;
-        height: 250px;
         display: inline-block;
         margin: 20px 20px 20px 20px;
     }
@@ -124,12 +123,14 @@ body {
 .produkty img {
     margin-top: 0px;
     padding: 0px;
-    border-radius: 10px;
+    overflow: hidden;
 }
 
 .container {
     position: relative;
     width: 100%;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px 1px black;
 }
 
 .image {
@@ -143,7 +144,7 @@ body {
 
 .middle {
   transition: .5s ease;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -151,9 +152,8 @@ body {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .container:hover .image {
-  filter: blur(2px);
+    transform: scale(1.5) rotate(10deg);
 }
 
 .container:hover .middle {
@@ -165,7 +165,7 @@ body {
   font-size: 60px;
   padding: 16px 32px;
   filter: drop-shadow(10px 6px 5px black);
-  font-family: 'impact';
+  font-family: 'Farro';
 }
 
 /* Contact Form With Google Maps */
@@ -499,13 +499,14 @@ body {
     padding: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: -70px;
 }
 .card{
     background-color: transparent;
 }
 .card-0 {
     color: #fff;
-    background-color: #434445;
+    background: url("bg2.jpg");
     position: relative;
     margin-left: 70px;
     min-height: 312px;
@@ -519,19 +520,19 @@ body {
 
 .profile {
     color: #000;
-    background-color: white;
+    background-color: transparent;
     position: absolute;
-    left: -70px;
-    top: 17%;
+    left: -80px;
+    top: 13%;
 }
 
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
 }
 
 .open-quotes {
-    margin-left: 130px;
+    margin-left: 180px;
     margin-top: 100px;
 }
 
@@ -542,7 +543,7 @@ body {
 
 .close-quotes {
     margin-bottom: 100px;
-    margin-right: 60px;
+    margin-right: 80px;
 }
 
 @media screen and (max-width: 600px) {
@@ -559,17 +560,17 @@ body {
     }
 
     .profile-pic {
-        width: 90px;
-        height: 90px;
+        display:none;
     }
-
+    .carousel-indicators{
+        margin-right: 0px;
+    }
     .open-quotes {
-        margin-left: 100px;
+        margin-left: 30px;
     }
 
     .content {
-        margin-left: 120px;
-        margin-right: 50px;
+        margin-left: 80px;
     }
 
     .close-quotes {
