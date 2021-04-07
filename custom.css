@@ -163,9 +163,9 @@ body {
   font-family: 'Farro';
 }
 /* Contact Form With Google Maps */
-@media (min-width: 451px) {
+@media (min-width: 450px) {
     .contact-form {
-        height: 60vh;
+        height: 80vh;
         width: 100%;
         position: relative;
     }
@@ -314,7 +314,6 @@ body {
         position: static;
         transform: translate(0, 0);
         width: 100%;
-        height: 100vh;
         box-sizing: border-box;
     }
     .c-heading h1 {
